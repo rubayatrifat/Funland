@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap');
+
+
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+:root{
+    --primary-color: rgb(255, 0, 0);
+}
+
+h1 {
+    color: var(--primary-color);
+}
