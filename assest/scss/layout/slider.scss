@@ -72,6 +72,7 @@
     border-radius: 8px;
     z-index: 2;
     position: relative;
+    border: none;
     &:hover {
         background: linear-gradient(to right, #03b7ee 0%, #99ff00 100%);
         color: #fff;
@@ -79,7 +80,7 @@
 }
 
 #balloon-container {
-    height: 550px;
+    height: 630px;
     padding: 1em;
     box-sizing: border-box;
     display: flex;

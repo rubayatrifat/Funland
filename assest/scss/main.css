@@ -120,6 +120,7 @@
   border-radius: 8px;
   z-index: 2;
   position: relative;
+  border: none;
 }
 .default-btn:hover {
   background: linear-gradient(to right, #03b7ee 0%, #99ff00 100%);
@@ -127,7 +128,7 @@
 }
 
 #balloon-container {
-  height: 550px;
+  height: 630px;
   padding: 1em;
   box-sizing: border-box;
   display: flex;
@@ -136,6 +137,7 @@
   transition: opacity 500ms;
   position: absolute;
   z-index: 2;
+  top: 0;
 }
 
 .balloon {
@@ -220,6 +222,96 @@
   margin-top: 20%;
   display: inline-block;
   margin-left: 15%;
+}
+
+.section-title span {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-family: "Delicious Handrawn", cursive;
+  color: #fd5d5d;
+  font-size: 24px;
+}
+.section-title h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 35px;
+  color: rgb(8, 189, 125);
+}
+.section-title p {
+  margin-bottom: 1rem;
+  padding: 0 249px;
+  font-size: 12px;
+  color: #999;
+  margin-top: 13px;
+  margin-bottom: 40px;
+}
+
+.quiz-area {
+  background: #fff4df;
+}
+.quiz-area .quiz-box {
+  text-align: center;
+  background: #fff;
+  display: table;
+  margin: auto;
+  padding: 58px 61px;
+}
+.quiz-area .quiz-box .question h2 {
+  font-family: "Josefin Sans", sans-serif;
+}
+.quiz-area .quiz-box .question .score-cate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.quiz-area .quiz-box .question .score-cate .score {
+  color: #bdbdbd;
+}
+.quiz-area .quiz-box .question .score-cate .categori {
+  background-color: rgb(248, 86, 86);
+  color: #fff;
+  padding: 5px;
+  border-radius: 7px;
+  font-size: 10px;
+}
+.quiz-area .quiz-box .options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.quiz-area .quiz-box .options li {
+  list-style: none;
+  width: 40%;
+  margin-bottom: 20px;
+  background-color: #333;
+  color: #fff;
+  margin-left: 10px;
+  font-size: 13px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.quiz-area .quiz-box .options li:active {
+  transform: scale(0.98);
+}
+.quiz-area .quiz-box .options li.selected {
+  background-color: #ccc;
+  color: #9e9e9e;
+}
+.quiz-area .quiz-box .default-btn {
+  margin-top: 10px;
+  cursor: pointer;
+}
+.quiz-area .quiz-box .default-btn:focus {
+  outline: none;
+}
+.quiz-area .quiz-box .default-btn:active {
+  transform: scale(0.98);
+}
+.quiz-area .quiz-box .play-again {
+  display: none;
 }
 
 * {

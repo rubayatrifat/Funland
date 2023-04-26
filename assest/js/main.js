@@ -58,6 +58,22 @@ window.addEventListener("load", () => {
   createBalloons(10)
 });
 
-window.addEventListener("click", () => {
-  removeBalloons();
-});
+// For Quiz Section
+
+const questionElm = document.querySelector('#question')
+const options = document.querySelector('options')
+
+async function loadQuestion() {
+    const apiUrl = 'https://opentdb.com/api.php?amount=10&difficulty=medium&type=multiple'
+    const result = await fetch(`${apiUrl}`)
+    const data = await result.json()
+    showQuestion(data.results[0])
+}
+
+
+function showQuestion(data) {
+    let correctAns = data.correct_answer;
+    console.log(correctAns)
+}
+
+loadQuestion()

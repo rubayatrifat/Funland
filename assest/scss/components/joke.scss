@@ -42,3 +42,26 @@
         margin-left: 15%;
     }
 }
+
+.section-title{
+    span{
+        display: inline-block;
+        margin-bottom: 15px;
+        font-family: "Delicious Handrawn", cursive;
+        color: #fd5d5d;
+        font-size: 24px;
+    }
+    h2{
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 35px;
+        color: rgb(8, 189, 125);
+    }
+    p{
+        margin-bottom: 1rem;
+        padding: 0 249px;
+        font-size: 12px;
+        color: #999;
+        margin-top: 13px;
+        margin-bottom: 40px;
+    }
+}
