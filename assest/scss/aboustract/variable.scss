@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Delicious+Handrawn&family=Josefin+Sans:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Bruno Ace', cursive;
+}
+
+.dark {
+    --primary-color: #000;
+}
+
+:root {
+    --header-color: #12ace1ab;
+}
+
+a{
+    color: #000;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+

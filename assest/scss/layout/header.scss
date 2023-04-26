@@ -1,0 +1,41 @@
+.header-area {
+    background: var(--header-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    .logo {
+        a{
+            img{
+                width: 125px;
+                margin-left: 40px;
+            }
+        }
+    }
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        width: 70%;
+        margin-right: 68px;
+        li {
+            list-style: none;
+            margin-left: 40px;
+            .notification {
+                position: relative;
+                &::before {
+                    content: "3";
+                    position: absolute;
+                    width: 15px;
+                    height: 15px;
+                    background-color: red;
+                    left: 5px;
+                    font-size: 10px;
+                    border-radius: 50px;
+                    text-align: center;
+                    color: #fff;
+                    top: -5px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.slider-area {
+  overflow: hidden;
+  height: 500px;
+}
+.slider-area .slider-content {
+  background: linear-gradient(to right, #03b7ee 0%, #99ff00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.slider-area .slider-content h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 45px;
+  font-weight: 600;
+  margin-top: 15%;
+}
+.slider-area .funbo-img {
+  position: relative;
+}
+.slider-area .funbo-img img {
+  position: absolute;
+  top: -184px;
+  width: 500px;
+  z-index: -5;
+  right: -218px;
+}/*# sourceMappingURL=slider.css.map */
