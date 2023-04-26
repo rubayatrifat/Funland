@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Delicious+Handrawn&family=Josefin+Sans:wght@400;500;600&display=swap");
 .header-area {
   background: var(--header-color);
@@ -84,7 +85,7 @@
   margin-top: 10%;
   text-align: center;
 }
-.slider-area .slider-btn a {
+.slider-area .slider-btn .default-btn {
   font-family: "Josefin Sans", sans-serif;
   background: linear-gradient(to left, #03b7ee 0%, #99ff00 100%);
   font-size: 20px;
@@ -93,7 +94,7 @@
   z-index: 2;
   position: relative;
 }
-.slider-area .slider-btn a:hover {
+.slider-area .slider-btn .default-btn:hover {
   background: linear-gradient(to right, #03b7ee 0%, #99ff00 100%);
   color: #fff;
 }
@@ -109,6 +110,116 @@
   padding: 2px 1px;
   border-radius: 8px 18px 8px 18px;
   color: #fff;
+}
+
+.default-btn {
+  font-family: "Josefin Sans", sans-serif;
+  background: linear-gradient(to left, #03b7ee 0%, #99ff00 100%);
+  font-size: 20px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  z-index: 2;
+  position: relative;
+}
+.default-btn:hover {
+  background: linear-gradient(to right, #03b7ee 0%, #99ff00 100%);
+  color: #fff;
+}
+
+#balloon-container {
+  height: 550px;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  transition: opacity 500ms;
+  position: absolute;
+  z-index: 2;
+}
+
+.balloon {
+  height: 125px;
+  width: 105px;
+  border-radius: 75% 75% 70% 70%;
+  position: relative;
+}
+
+.balloon:before {
+  content: "";
+  height: 75px;
+  width: 1px;
+  padding: 1px;
+  background-color: #FDFD96;
+  display: block;
+  position: absolute;
+  top: 125px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.balloon:after {
+  content: "▲";
+  text-align: center;
+  display: block;
+  position: absolute;
+  color: inherit;
+  top: 120px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(100vh);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-300vh);
+    opacity: 0;
+  }
+}
+.joke-area {
+  background: rgba(120, 224, 255, 0.2196078431);
+}
+.joke-area .section-title span {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-family: "Delicious Handrawn", cursive;
+  color: #fd5d5d;
+  font-size: 24px;
+}
+.joke-area .section-title h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 35px;
+  color: rgb(8, 189, 125);
+}
+.joke-area .section-title p {
+  margin-bottom: 1rem;
+  padding: 0 249px;
+  font-size: 12px;
+  color: #999;
+  margin-top: 13px;
+  margin-bottom: 40px;
+}
+.joke-area h3 {
+  font-size: 17px;
+  background: #d9d9d9;
+  width: 39pc;
+  height: 16pc;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  padding: 40px;
+  line-height: 30px;
+}
+.joke-area .mid {
+  margin-top: 20%;
+  display: inline-block;
+  margin-left: 15%;
 }
 
 * {
