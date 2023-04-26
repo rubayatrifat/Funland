@@ -4,6 +4,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 5px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 .header-area .logo a img {
   width: 125px;
@@ -34,4 +37,12 @@
   text-align: center;
   color: #fff;
   top: -5px;
+}
+.header-area ul li .login-btn {
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  margin-left: -9px;
 }/*# sourceMappingURL=header.css.map */

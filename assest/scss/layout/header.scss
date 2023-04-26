@@ -4,6 +4,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 5px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
     .logo {
         a{
             img{
@@ -35,6 +38,14 @@
                     color: #fff;
                     top: -5px;
                 }
+            }
+            .login-btn {
+                background: #fff;
+                padding: 10px 20px;
+                border-radius: 50px;
+                font-size: 16px;
+                font-family: 'Josefin Sans', sans-serif;
+                margin-left: -9px;
             }
         }
     }

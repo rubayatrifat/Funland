@@ -1,25 +1,65 @@
 .slider-area {
     overflow: hidden;
-    height: 500px;
+    height: 550px;
+    background-color: #e6e6e6;
     .slider-content {
         background: linear-gradient(to right, #03b7ee 0%, #99ff00 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        z-index: 2;
+        position: relative;
         h1 {
             font-family: 'Josefin Sans', sans-serif;
-            font-size: 45px;
+            font-size: 50px;
             font-weight: 600;
-            margin-top: 15%;
+            margin-top: 10%;
+        }
+        p{
+            padding: 0 413px 0 0;
+            font-size: 14px;
         }
     }
     .funbo-img {
         position: relative;
         img {
             position: absolute;
-            top: -184px;
+            top: -343px;
             width: 500px;
-            z-index: -5;
-            right: -218px;
+            z-index: 1;
+            right: 27px;
+        }
+    }
+    .slider-btn {
+        margin-top: 10%;
+        text-align: center;
+        a{
+            font-family: 'Josefin Sans', sans-serif;
+            background: linear-gradient(to left, #03b7ee 0%, #99ff00 100%);
+            font-size: 20px;
+            padding: 15px 20px;
+            border-radius: 8px;
+            z-index: 2;
+            position: relative;
+            &:hover {
+                background: linear-gradient(to right, #03b7ee 0%, #99ff00 100%);
+                color: #fff;
+            }
+        }
+
+        .new {
+            &::before {
+                content: "New";
+                position: absolute;
+                width: 36px;
+                height: 20px;
+                background: red;
+                top: -6px;
+                right: -5px;
+                font-size: 13px;
+                padding: 2px 1px;
+                border-radius: 8px 18px 8px 18px;
+                color: #fff;
+            }
         }
     }
 }

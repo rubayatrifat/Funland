@@ -4,6 +4,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 5px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 .header-area .logo a img {
   width: 125px;
@@ -35,28 +38,74 @@
   color: #fff;
   top: -5px;
 }
+.header-area ul li .login-btn {
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  margin-left: -9px;
+}
 
 .slider-area {
   overflow: hidden;
-  height: 500px;
+  height: 550px;
+  background-color: #e6e6e6;
 }
 .slider-area .slider-content {
   background: linear-gradient(to right, #03b7ee 0%, #99ff00 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  z-index: 2;
+  position: relative;
 }
 .slider-area .slider-content h1 {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 45px;
+  font-size: 50px;
   font-weight: 600;
-  margin-top: 15%;
+  margin-top: 10%;
+}
+.slider-area .slider-content p {
+  padding: 0 413px 0 0;
+  font-size: 14px;
 }
 .slider-area .funbo-img {
   position: relative;
 }
 .slider-area .funbo-img img {
   position: absolute;
-  top: -100px;
+  top: -343px;
   width: 500px;
-  z-index: -5;
+  z-index: 1;
+  right: 27px;
+}
+.slider-area .slider-btn {
+  margin-top: 10%;
+  text-align: center;
+}
+.slider-area .slider-btn a {
+  font-family: "Josefin Sans", sans-serif;
+  background: linear-gradient(to left, #03b7ee 0%, #99ff00 100%);
+  font-size: 20px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  z-index: 2;
+  position: relative;
+}
+.slider-area .slider-btn a:hover {
+  background: linear-gradient(to right, #03b7ee 0%, #99ff00 100%);
+  color: #fff;
+}
+.slider-area .slider-btn .new::before {
+  content: "New";
+  position: absolute;
+  width: 36px;
+  height: 20px;
+  background: red;
+  top: -6px;
+  right: -5px;
+  font-size: 13px;
+  padding: 2px 1px;
+  border-radius: 8px 18px 8px 18px;
+  color: #fff;
 }/*# sourceMappingURL=index.css.map */
